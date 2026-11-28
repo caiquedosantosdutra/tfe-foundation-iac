@@ -9,6 +9,7 @@ resource "tfe_oauth_client" "oauth_github" {
 resource "tfe_workspace" "nginx-demo-iac"{
   name           = "nginx-demo-iac"
   organization   = tfe_organization.aws.name
+  project_id = tfe_project.compute.id
   queue_all_runs = false
   vcs_repo {
     branch         = var.branch

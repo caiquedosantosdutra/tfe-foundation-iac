@@ -13,3 +13,4 @@ resource "tfe_organization" "azr" {
   name  = "azr"
   email = var.email
 }
+

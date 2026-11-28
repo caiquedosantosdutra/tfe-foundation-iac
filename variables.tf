@@ -25,3 +25,10 @@ variable "oauth_token" {
     sensitive = true
 }
 
+variable "aws_tfc_role" {
+    type = string
+}
+
+variable "aws_region" {
+    type = string
+}
